@@ -1,0 +1,34 @@
+{
+  "name": "webviewgold-sdk",
+  "version": "0.1.0",
+  "private": false,
+  "homepage": "https://github.com/frani/webviewgold-sdk",
+  "description": "unofficial webview gold sdk",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "repository": "git@github.com:frani/webviewgold-sdk.git",
+  "author": "frani <franinnocenti@gmail.com>",
+  "license": "MIT",
+  "contributors": [
+    "frani (https://frani.dev)"
+  ],
+  "bugs": {
+    "url": "https://github.com/frani/webviewgold-sdk/issues"
+  },
+  "scripts": {
+    "test": "echo 'ok!' "
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [
+    "webview",
+    "webviewgold",
+    "sdk",
+    "webviewgold-sdk",
+    "no depenencies",
+    "no deps"
+  ]
+}

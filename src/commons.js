@@ -35,11 +35,12 @@ const pushNotification = async ({
 
 /**
  * Get UUID
- * @returns {void}
+ * @returns {string} UUID string
  */
 const getUUID = () => {
   window.location.href = "get-uuid://";
-  return uuid;
+  if (uuid) return uuid;
+  return "00000000-0000-0000-0000-000000000000";
 };
 
 /**
@@ -59,7 +60,13 @@ const setStatusBarColor = (color = "255,0,0") => {
  */
 const getAppVersion = () => {
   window.location.href = "getappversion://";
-  return { versionNumber, bundleNumber };
+  const response = {
+    versionNumber: "dev",
+    bundleNumber: "dev",
+  };
+  if (versionNumber) response.versionNumber = versionNumber;
+  if (bundleNumber) response.bundleNumber = bundleNumber;
+  return response;
 };
 
 /**

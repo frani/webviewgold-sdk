@@ -64,8 +64,8 @@ const getAppVersion = () => {
     versionNumber: "dev",
     bundleNumber: "dev",
   };
-  if (versionNumber) response.versionNumber = versionNumber;
-  if (bundleNumber) response.bundleNumber = bundleNumber;
+  if (window?.versionNumber) response.versionNumber = window.versionNumber;
+  if (window?.bundleNumber) response.bundleNumber = window.bundleNumber;
   return response;
 };
 
